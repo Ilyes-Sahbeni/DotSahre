@@ -1,0 +1,10 @@
+﻿@using Hybrid.Shared;
+<div class="my-component">
+    This component is defined in the <strong>HybridRCL</strong> library.<br />
+    <h1>@(dataService.GetString())</h1>
+</div>
+@code{
+    [Parameter,EditorRequired]
+    public IDataService dataService { get; set; }
+}
+
